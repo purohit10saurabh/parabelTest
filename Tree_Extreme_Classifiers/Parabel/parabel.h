@@ -127,17 +127,16 @@ public:
 
 		fin >> num_Xf;
 		fin >> num_Y;
-		_int num_node;
-		fin >> num_node;
-
-		for( _int i=0; i<num_node; i++ )
-		{
+		_int num_node = 0 ;
+		//fin >> num_node;
+		num_node = 0;
+		while (!fin.eof() ){
 			Node* node = new Node;
 			nodes.push_back( node );
+			fin >> (*node);
+			cout << "Num node: " << num_node << endl;
+			num_node++;
 		}
-
-		for( _int i=0; i<num_node; i++ )
-			fin >> (*nodes[i]);
 
 		fin.close();
 	}
@@ -169,7 +168,7 @@ public:
 
 		fout << num_Xf << "\n";
 		fout << num_Y << "\n";		
-		fout << num_node << "\n";
+		//fout << num_node << "\n";
 
 		for( _int i=0; i<num_node; i++ ){
 			//if(i==0)
