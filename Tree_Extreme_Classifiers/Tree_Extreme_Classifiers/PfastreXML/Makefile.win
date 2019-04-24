@@ -1,0 +1,15 @@
+INC=/I..\Tools\c++ /I..\FastXML
+SRC=..\FastXML
+CXXFLAGS=/O2
+
+all: PfastreXML_train PfastreXML_predict
+
+PfastreXML_train:
+	cl /EHsc /Fe:PfastreXML_train.exe $(CXXFLAGS) $(INC) PfastreXML_train.cpp $(SRC)\fastXML.cpp ..\Tools\c++\mat.cpp
+
+PfastreXML_predict:
+	cl /EHsc /Fe:PfastreXML_predict.exe $(CXXFLAGS) $(INC) PfastreXML_predict.cpp $(SRC)\fastXML.cpp ..\Tools\c++\mat.cpp
+
+clean:
+	del /f PfastreXML_train.exe PfastreXML_train.obj PfastreXML_predict.exe PfastreXML_predict.obj fastXML.obj mat.obj
+

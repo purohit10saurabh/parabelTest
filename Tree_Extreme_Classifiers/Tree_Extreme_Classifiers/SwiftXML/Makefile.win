@@ -1,0 +1,14 @@
+INC=/I..\Tools\c++ /I..\FastXML /I..\PfastreXML
+CXXFLAGS=/O2
+
+all: swiftXML_train swiftXML_predict
+
+swiftXML_train:
+	cl /EHsc /Fe:swiftXML_train.exe $(CXXFLAGS) $(INC) swiftXML_train.cpp swiftXML.cpp ..\FastXML\fastXML.cpp ..\Tools\c++\mat.cpp
+
+swiftXML_predict:
+	cl /EHsc /Fe:swiftXML_predict.exe $(CXXFLAGS) $(INC) swiftXML_predict.cpp swiftXML.cpp ..\FastXML\fastXML.cpp ..\Tools\c++\mat.cpp
+
+clean:
+	del /f swiftXML_train.exe swiftXML_train.obj swiftXML_predict.exe swiftXML_predict.obj swiftXML.obj mat.obj fastXML.obj
+	

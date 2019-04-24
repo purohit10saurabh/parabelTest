@@ -1,0 +1,36 @@
+EURLex-4K
+=========
+frac=0.2 : -c 4.0 -ic 4.0 -a 0.8 -m 5 -f 0.7 -N 15539
+frac=0.4 : -c 0.5 -ic 4.0 -a 0.9 -m 5 -f 0.6 -N 15539
+frac=0.6 : -c 1.0 -ic 16.0 -a 0.9 -m 5 -f 0.5 -N 15539
+frac=0.8 : -c 0.5 -ic 32.0 -a 0.9 -m 10 -f 0.5 -N 15539
+
+Wiki10-31K
+==========
+frac=0.2 : -c 1.0 -ic 8.0 -a 1.0 -m 10 -f 0.9 -N 14146
+frac=0.4 : -c 1.0 -ic 4.0 -a 0.2 -m 5 -f 0.7 -N 14146
+frac=0.6 : -c 1.0 -ic 8.0 -a 0.4 -m 20 -f 0.8 -N 14146
+frac=0.8 : -c 0.125 -ic 4.0 -a 0.4 -m 10 -f 0.6 -N 14146
+
+AmazonCat-13K
+=============
+frac=0.2 : -c 0.5 -ic 4.0 -a 0.8 -m 5 -f 0.5 -N 1186239
+frac=0.4 : -c 0.5 -ic 8.0 -a 0.9 -m 5 -f 0.5 -N 1186239
+frac=0.6 : -c 0.5 -ic 8.0 -a 0.9 -m 5 -f 0.5 -N 1186239
+frac=0.8 : -c 0.5 -ic 16.0 -a 0.9 -m 5 -f 0.5 -N 1186239
+
+CitationNetwork-36K
+===================
+frac=0.2 : -c 0.5 -ic 0.5 -a 0.5 -m 5 -f 0.5 -N 62503
+frac=0.4 : -c 0.5 -ic 0.5 -a 0.6 -m 5 -f 0.5 -N 62503
+frac=0.6 : -c 0.5 -ic 0.5 -a 0.7 -m 5 -f 0.5 -N 62503
+frac=0.8 : -c 0.5 -ic 0.5 -a 0.7 -m 5 -f 0.5 -N 62503
+
+Amazon-79K
+==========
+Use default parameters
+
+Wikipedia-500K
+==============
+Use default parameters
+
